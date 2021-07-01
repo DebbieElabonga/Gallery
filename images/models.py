@@ -36,6 +36,7 @@ class Image(models.Model):
     description = models.TextField()
     location = models.ForeignKey(Image_Location,on_delete=models.CASCADE)
     categories= models.ForeignKey(Categories,on_delete=models.CASCADE)
+    upload_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.image
@@ -54,12 +55,12 @@ class Image(models.Model):
 
     @classmethod
     def search_by_category(cls, categories):
-        images = cls.objects.filter(categories__name__icontains=categories).all()
+        images = cls.objects.filter(categories_name=categories).all()
         return Image
 
     @classmethod
     def filter_by_location(cls, location):
-        Image_Location = Image.objects.filter(location__name=location).all()
+        Image_Location = Image.objects.filter(location_name=location).all()
         return  images
 
 
