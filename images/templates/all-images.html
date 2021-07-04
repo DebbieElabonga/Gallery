@@ -1,11 +1,23 @@
 {% extends 'base.html'%}
 
 {% block content %}
-{% for image in images %}
-    <img src="{{image.image.url}}" alt="Image">
-    <p>{{image.name}}</p>
-    {{image.description}}
-    <br>
-{%endfor%}
 <h1>welcome</h1>
+<div class="container">
+
+
+{% for image in images %}
+<div class="row">
+<div class="col-xs-18 col-sm-6 col-md-3 ">
+    <div class="card-body">
+        <li class="jumbotron " style="padding-left:10px ; list-style-type: none; background-color: rgb(250, 41, 125);"> 
+    <img src="{{image.image.url}}"class="img-fluid img-thumbnail" alt="Image" style="width:500px;">
+    <strong><p>{{image.name}}</p></strong>
+  <!-- <b><p>{{image.description}}</p></b> -->
+    <br>
+</div>
+</div>
+{%endfor%}
+</div>
+</div>
 {%endblock%}
+

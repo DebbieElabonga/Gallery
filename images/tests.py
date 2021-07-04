@@ -42,10 +42,10 @@ class TestImage(TestCase):
         self.category = Categories(name='iconic')
         self.category.save()
 
-        self.location = Location(name = 'juja')
+        self.location = Location(place='juja')
         self.location.save_location()
 
-        self.new_image = Image(name='happy', description='A happy girl', category=self.category, location=self.location,upload_date= datetime.date.today(), url='./image/happy.png')
+        self.new_image = Image(name='happy', description='A happy girl', category=self.category, location=self.location,upload_date= dt.date.today(), url='./image/happy.png')
 
     def test_image_instance(self):
         self.assertTrue(isinstance(self.new_image, Image))
