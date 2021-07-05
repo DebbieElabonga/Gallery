@@ -29,9 +29,9 @@ source virtual/bin/activate
 You'll need to create a new postgress database, Type the following command to access postgress
 
  $ psql
-Then run the following query to create a new database named picsgarage
+Then run the following query to create a new database named images
 
-# create database tribune
+# create database
 4.Install dependencies
 To install the requirements from requirements.txt file,
 
