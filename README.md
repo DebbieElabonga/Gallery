@@ -1,51 +1,53 @@
-My-Gallery
-Author
-Debbie Elabonga
-
-Description
+# Gallery
+#### By Debbie Salano
+## Description
 This is a Django application for my personal gallery where a user can upload images for other to see and be able to search for images according to their category.
+## User Story
+* View different photos that interest me.
+* Click on a single photo to expand it and also view the details of the photo. The photo details must appear on a modal within the same route as the main page.
+* Search for different categories of photos. (ie. Travel, Food)
+* Copy a link to the photo to share with my friends.
+* View photos based on the location they were taken.by joining a subscription.
+## System Features
+* Your Project must contain an Image model with the following properties:
+1.Image
+2.Image Name.
+3.Image Description.
+4.Image Location Foreign Key.
+5.Image category Foreign Key.
 
-Live Link
-https://gallery06.herokuapp.com/
+## Technical Requirements
+* Create a specs markdown file that lists down all the projects specifications.
+* All your models should contain unit tests to test the different behaviours. All your test should pass.
+* Your project should follow the proper folder structure.
+* Your project should be deployed to Heroku.
+* Your project should contain proper commit messages.
+## Technologies Used
+  * Python 3.8.5
+  * HTML5, CSS and Bootstrap
+  * Django Framework
+  * Postgressql
+  * Heroku
 
-User Story
-View different photos that interest them
-Click a single image to expand it and view the details of that photo
-Search for different categories
-Copy a link to the photo to share with my friends.
-View photos based on the location they were taken.
-Setup and Installation
-To get the project .......
+## Link to live site
+[https://gallery06.herokuapp.com/](link)
+## License
+Copyright (c) [2021] [Debbie Salano]
 
-Cloning the repository:
-https://github.com/DebbieElabonga/Gallery
-Navigate into the folder and install requirements
-cd Picture-Globe pip install -r requirements.txt
-Install and activate Virtual
-- python3 -m venv virtual - source virtual/bin/activate
-Install Dependencies
-pip install -r requirements.txt
-Setup Database
-SetUp your database User,Password, Host then make migrate
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-python manage.py makemigrations pictures
-Now Migrate
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-python manage.py migrate
-Run the application
-python manage.py runserver
-Running the application
-python manage.py server
-Testing the application
-python manage.py test
-Open the application on your browser 127.0.0.1:8000.
-
-Technology used
-[Python3.8]
-[Django]
-[Heroku]
-Known Bugs
-There are no known bugs currently but pull requests are allowed incase you spot a bug
-License
-MIT License:
-Copyright (c) 2021 Debbie Elabonga Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
